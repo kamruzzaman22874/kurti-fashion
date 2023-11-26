@@ -1,5 +1,5 @@
 import image from "../../assets/Frame 50.png"
-import { IoIosHeartEmpty } from "react-icons/io";
+import { IoIosHeartEmpty, IoIosArrowForward } from "react-icons/io";
 import { CiStar, CiRuler, CiShoppingCart } from "react-icons/ci";
 import { MdOutlineLocalShipping } from "react-icons/md";
 import { BiAward, BiDockTop } from "react-icons/bi";
@@ -10,13 +10,16 @@ import colorImg1 from "../../assets/color5.png"
 import colorImg2 from "../../assets/color6.png"
 const Banner = () => {
     return (
-        <div className="md:flex  card-side bg-base-100 md:px-10">
-            <div className="space-y-5 mt-10 h-full hidden md:block">
-                <img className="w-32" src={image} alt="Movie" />
-                <img className="w-32" src={image} alt="Movie" />
-                <img className="w-32" src={image} alt="Movie" />
-                <img className="w-32" src={image} alt="Movie" />
-                <img className="w-32" src={image} alt="Movie" />
+        <div className="md:flex card-side bg-base-100 md:px-10">
+            <div className="space-y-5 mt-10 h-full hidden lg:block">
+                <img className="w-32 rounded" src={image} alt="Movie" />
+                <img className="w-32 rounded" src={image} alt="Movie" />
+                <img className="w-32 rounded" src={image} alt="Movie" />
+                <img className="w-32 rounded" src={image} alt="Movie" />
+                <div className="relative hidden md:block">
+                    <img className="w-32 opacity-40" src={image} alt="img" />
+                    <button className="absolute text-xs flex justify-center items-center left-0 top-1/2 rounded bg-white">See all <IoIosArrowForward /> </button>
+                </div>
             </div>
             <img className="md:ml-8 p-4 md:h-[570px] w-full" src={image} alt="frame" />
             <div className="w-full md:px-16 px-6">
