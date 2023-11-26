@@ -4,9 +4,9 @@ const Navbar = () => {
     const navItems =
         <>
             <li><Link to="/">Home</Link></li>
-            <li><Link>Artform</Link></li>
-            <li><Link>Chikankari</Link></li>
-            <li><Link>Kurti</Link></li>
+            <li><Link> /Artform</Link></li>
+            <li><Link> /Chikankari</Link></li>
+            <li><Link> /Kurti</Link></li>
 
         </>
     return (
@@ -22,7 +22,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-start hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="flex px-1">
                     {navItems}
                 </ul>
             </div>
