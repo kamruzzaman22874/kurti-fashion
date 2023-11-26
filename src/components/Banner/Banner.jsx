@@ -10,8 +10,8 @@ import colorImg1 from "../../assets/color5.png"
 import colorImg2 from "../../assets/color6.png"
 const Banner = () => {
     return (
-        <div className="card card-side bg-base-100 shadow-xl px-10">
-            <div className="space-y-5 h-full">
+        <div className="md:flex card-side bg-base-100 shadow-xl px-10">
+            <div className="space-y-5 h-full hidden md:block">
                 <img className="w-32" src={image} alt="Movie" />
                 <img className="w-32" src={image} alt="Movie" />
                 <img className="w-32" src={image} alt="Movie" />
@@ -77,7 +77,7 @@ const Banner = () => {
                     </div>
 
                     <div className="flex gap-1 my-5">
-                        <button className="btn btn-outline w-1/2 border-2 border-[#703C01]   text-lg">Add to Cart <CiShoppingCart className="text-2xl text-[#703C01] font-extraboldbold " /> </button>
+                        <button className="btn btn-outline md:w-1/2 border-2 border-[#703C01]   text-lg">Add to Cart <CiShoppingCart className="text-2xl text-[#703C01] font-extraboldbold " /> </button>
                         <button className="btn btn-outline w-1/2 bg-[#703C01] text-lg text-white">Buy Now</button>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ const Banner = () => {
                         <CgGift className="w-1/2 mx-auto text-xl" />
                         <p>Easy Return</p>
                     </div>
-                    <div className="p-2 space-y-2">
+                    <div className="p-1 space-y-2">
                         <BiDockTop className="w-1/2 mx-auto text-xl space-y-2" />
                         <p>Safe Payment <br /> Options</p>
                     </div>
